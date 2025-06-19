@@ -1,0 +1,22 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.header {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    &__titlebar {
+        height: 100%;
+        background: $header;
+        display: flex;
+        align-items: center;
+        &-img {
+            width: 25px;
+            height: 25px;
+            margin: 0 15px;
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

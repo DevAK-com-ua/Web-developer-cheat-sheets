@@ -1,0 +1,108 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.main {
+  background: $main;
+  grid-row: 2;
+  grid-column: 2;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-color: $light-gray $header;
+  scrollbar-width: thin;
+  &-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $focus;
+  }
+  &-subtitle {
+    font-size: 24px;
+    text-align: center;
+    color: $focus;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.code {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    &-wrapper {
+      flex: 1 1 50%;
+    position: relative;
+    display: inline-block;
+    background-color: $light-gray;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    // white-space: nowrap;
+    // overflow-x: auto;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3); // півпрозоре затемнення
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none; // щоб не заважав клікам
+      border-radius: 5px; // за бажанням
+    }
+    &-descr {
+      flex: 1 1 100%;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    &:hover .copy-btn {
+      opacity: 1;
+    }
+  }
+  // &-descr {
+  // }
+  &-comment {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+    width: fit-content;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 4px; 
+      width: 100%;
+      height: 1px;
+      background-color: $light;
+    }
+  }
+}
+
+.copy-btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 25px;
+}

@@ -1,0 +1,43 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+#commandPalette {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $header;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+  border-radius: 8px;
+}
+
+#searchInput {
+  background: $light;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#searchResults li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  &:hover {
+    background: $dark;
+  }
+  &:focus {
+    // outline: none;
+    background: $dark;
+  }
+}

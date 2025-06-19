@@ -1,0 +1,602 @@
+<section class="topic" id="git-setup">
+  <h2 class="main-title">Git — Налаштування</h2>
+  <div class="main-wrapper">
+    <h3 class="main-subtitle">Інсталяція, налаштування, початок роботи</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git config --global user.name "Ім'я"</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Задає ім'я користувача для всіх репозиторіїв.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git config --global user.email "email@example.com"</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Задає email для комітів.</div>
+    </div>
+
+    <div class="code-comment">
+      //Вказані ім'я та email людини відображається у змінах, та дає змогу
+      бачити хто їх вносив.//
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git config --list</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Показує всі налаштування git.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git init</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Створює новий локальний git-репозиторій у поточній папці (git починає
+        відстежувати папку).
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-basic">
+  <h2 class="main-title">Git — Основні команди</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Додавання, фіксація, перегляд змін</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git status</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Показує статус репозиторії, чи є файли які не відстежуються, або були
+        змінені.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git add .</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Додає всі зміни у відстеження (staging area) перед комітом.
+      </div>
+    </div>
+
+    <div class="code-comment">
+      //Замість крапки можна вказати назву окремого файлу, якщо в staging area
+      потрібно передати лише його.//
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git commit -m "повідомлення"</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Створює коміт, зберігаємо та коментуємо зміни.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git log</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Виводить історію комітів.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git log --oneline</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Коротка версія історії комітів.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git log -p</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Показує зміни для кожного коміту.</div>
+    </div>
+
+    <div class="code-comment">
+      //Історія - розширено, щоб вийти з цього режиму
+      <code class="code-wrapper">q</code>.//
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-diff">
+  <h2 class="main-title">Git — Перегляд змін</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Відмінності та деталі комітів</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git diff</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Показує відмінності незакомічених зміни від останнього коміту.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git show</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Показує деталі змін останнього коміту.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git show #</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — (#-тег коміту) Показує деталі змін вказаного коміту.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-amend-reset">
+  <h2 class="main-title">Git — Редагування та скасування змін</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Робота з версіями файлів, комітів</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git commit --amend --no-edit</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Вносить зміни в останній коміт без зміни коментаря.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git restore --staged шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Повертаємо файл зі staging area.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git restore шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Скасовує зміни у файлі, повертає останню версію файлу з останнього
+        коміту.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git restore --source=# шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — (#- тег коміту) Повертає вказанмй файл до конкретного, вказаного
+        коміту.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git rm шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Видаляє файл з робочої директорії та з staging area і додає це
+        видалення до коміту.
+      </div>
+    </div>
+
+    <div class="code-comment">
+      //Щоб повернути цей файл, потрібно використати
+      <div class="code-wrapper">
+        <code>git restore --staged шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      , в такому варіанті git поверне видалений файл.//
+    </div>
+
+    <div class="code-comment">
+      //Щоб замість видаленого файлу повернути старішу версію, потрібно
+      використати
+      <div class="code-wrapper">
+        <code>git restore --source=# шлях/файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      .//
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git reset --soft #</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — (#- тег коміту) Відкат до вказаної версії коміту, зберігаючи зміни у
+        staging area.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git reset --hard #</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — (#- тег коміту) Відкат до вказаної версії коміту, із видаленням
+        наступних комітів повністю.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-clean">
+  <h2 class="main-title">Git — Очищення проєкту</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Видалення файлів</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git clean -n</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Показує кандидатів на видалено.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git clean -f</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Видаляє непроіндексовані файли (не відслідковувані Git).
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-branches">
+  <h2 class="main-title">Git — Робота з гілками</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Створення, видалення, переміщення</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git branch</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Показує список гілок та в якій ми знаходимось.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git branch name-branch</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Створює нову гілку.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git checkout name-branch</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Перемикається на вказану гілку.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git checkout -b name-branch</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Створює і перемикається на нову гілку. Альтернатива:
+        <div class="code-wrapper">
+          <code>git branch -b name-branch</code>
+          <button class="copy-btn" title="Скопіювати">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+        .
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git branch -d branch-name</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Мʼяке видалення гілки, видаляє якщо гілка вже злита з основною
+        (запобігає втраті змін).
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git branch -D branch-name</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Жорстке видалення гілки, всі зміни які були внесені та не злиті в
+        основну гілку будуть видалені.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-merge">
+  <h2 class="main-title">Git — Злиття гілок</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Обʼєднання, застосування змін</h3>
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git merge branch-name</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Виконується з main-гілки та обʼєднуєднує-застосовує зміни з вказаної
+        гілки.
+      </div>
+    </div>
+
+    <div class="code-comment">
+      //Можна використовувати не лише в main, тоді зміни-злиття буде застосовано
+      до поточної гілки.//
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-conflicts">
+  <h2 class="main-title">Git — Конфлікти та їх вирішення</h2>
+  <div class="main-wrapper">
+      <h3 class="main-subtitle">Коли виникає конфлікт?</h3>
+    <ul class="main-wrapper-list">
+      <li class="code-text">
+        Дві гілки змінюють один і той самий рядок файлу.
+      </li>
+      <li class="code-text">Одна гілка видаляє файл, а інша — змінює його.</li>
+      <li class="code-text">
+        Обидві гілки додають однакові імена файлів у різних версіях.
+      </li>
+    </ul>
+
+    <h3 class="main-subtitle">Як виправити?</h3>
+    <div class="code-comment">
+      //Після злиття, якщо виник конфлікт — Git позначає конфліктні місця у
+      файлах.//
+    </div>
+
+    <div class="code-comment">//Виправ конфлікт вручну в коді, потім://</div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git add файл</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Додає виправлений файл у staging area.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git commit</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Завершує злиття.</div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="git-github">
+  <h2 class="main-title">Git — Робота з GitHub</h2>
+  <div class="main-wrapper">
+    <h3 class="main-subtitle">Синхронізація локального репозиторію з GitHub</h3>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git remote add origin URL </code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Додає віддалений репозиторій (один раз після git init).
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git push -u origin main</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Вперше надсилає локальну гілку на GitHub і встановлює її як основну.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git push</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Надсилає нові коміти у вже пов’язаний віддалений репозиторій (після
+        первинного -u).
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git pull</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Завантажує та застосовує останні зміни з GitHub до поточної гілки.
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git fetch</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Завантажує останні зміни з GitHub без автоматичного злиття з поточною
+        гілкою (на відміну від pull).
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git remote -v</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Показує список віддалених репозиторіїв (часто використовують для
+        перевірки, до якого GitHub-репозиторію підключено локальний проєкт).
+      </div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git push origin branch-name</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Відправка будь-якої гілки, не лише main.</div>
+    </div>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git pull origin branch-name</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">— Отримання змін з конкретної гілки.</div>
+    </div>
+
+    <h3 class="main-subtitle">Клонування репозиторію</h3>
+
+    <div class="code">
+      <div class="code-wrapper">
+        <code>git clone URL</code>
+        <button class="copy-btn" title="Скопіювати">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="code-descr">
+        — Копіює віддалений репозиторій з GitHub на локальний комп’ютер (створює
+        локальну копію).
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="code">
+    <div class="code-wrapper">
+      <code></code>
+      <button class="copy-btn" title="Скопіювати">
+        <i class="fas fa-copy"></i>
+      </button>
+    </div>
+    <div class="code-descr">
+    </div>
+  </div>

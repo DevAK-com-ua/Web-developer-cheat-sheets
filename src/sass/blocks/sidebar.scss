@@ -1,0 +1,124 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.sidebar {
+    background-color: $dark;
+    width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-color: $light-gray $header;
+    scrollbar-width: thin;
+    // user-select: none;
+    &::selection {
+            background: none;
+            color: white;
+        }
+    &__wrapper {
+        height: 100%;
+        padding: 20px;
+    }
+    &__list {
+        // transition: all 5s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding-left: 0;
+        &-items {
+            i {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        &-items summary:hover {
+            background-color: $light-gray;
+            color: white;
+        }
+    }
+
+// Поправити
+
+    &__details {
+        &[open] summary {
+            background: $header;
+            color: $focus;
+            &::before {
+                color: $light;
+                position: absolute;
+                left: 0;
+                content: '\f107';
+                font-size: 18px;
+            }
+        }
+        // &[open] .sidebar__details-items {
+        //     max-height: 500px; // Встановіть потрібну висоту
+        // }
+        // &-items {
+        //     overflow: hidden;
+        //     max-height: 0;
+        //     transition: max-height 1s ease;
+        // }
+        &-list {
+            padding: 20px 10px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                text-align: center;
+                border-radius: 10px;
+                background-color: $light-gray;
+                padding: 10px;
+                list-style: none;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    background: $main;
+                    border:1px solid $light;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    &__summary {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $light;
+        font-weight: 700;
+        cursor: pointer;
+        list-style: none;
+        &-img {
+            width: 25px;
+            height: 25px;
+            margin: 0 20px;
+            justify-content: center;
+        }
+        &-title {
+            font-size: 20px;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            content: '\f105';
+            font-family: 'Font Awesome 5 Free';
+            color: $light;
+            font-size: 18px;
+        }
+    }
+}
+
+.sidebar__details-list li.active-topic {
+    background-color: $main;
+    border:1px solid $focus;
+    font-weight: 900;
+    color: $focus;
+  }
+  
+ 
+
+

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html list="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for Code description" />
+    <meta name="author" content="Awesome student" />
+    <title>Devak</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="header__titlebar">
+          <a href="/index.html"
+            ><img
+              class="header__titlebar-img"
+              src="/src/img/icons/code.png"
+              alt="code"
+          /></a>
+          <h1 class="header__titlebar-title">Шпаргалки веб-розробника</h1>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <div class="sidebar__wrapper">
+          <ul class="sidebar__list">
+            <!-- HTML -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/html.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">HTML</h2>
+                </summary>
+                <div class="sidebar__details-wrapper">
+                  <ul class="sidebar__details-list">
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="tags"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">Теги</h3>
+                        <p class="sidebar__details-text">
+                          Основні елементи розмітки.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="forms"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">Форми</h3>
+                        <p class="sidebar__details-text">
+                          Елементи введення користувача.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="attributes"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">
+                          Атрибути
+                        </h3>
+                        <p class="sidebar__details-text">
+                          Додають властивості тегам.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="simantic_tags"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">
+                          Семантичні теги
+                        </h3>
+                        <p class="sidebar__details-text">
+                          Описують зміст елементів.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="elements"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">
+                          Форми та елементи введення
+                        </h3>
+                        <p class="sidebar__details-text">Для збору даних.</p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="multimedia"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">
+                          Мультимедіа
+                        </h3>
+                        <p class="sidebar__details-text">
+                          Вставка зображень, відео, аудіо.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="tables"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">Таблиці</h3>
+                        <p class="sidebar__details-text">
+                          Табличні структури даних.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="sidebar__details-item"
+                      data-file="html"
+                      data-topic="seo"
+                    >
+                      <div>
+                        <h3 class="title-h3 sidebar__details-title">
+                          SEO-розмітка
+                        </h3>
+                        <p class="sidebar__details-text">
+                          Оптимізація для пошуковиків.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+
+            <!-- CSS -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/css.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">CSS</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="selectors"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">Селектори</h3>
+                      <p class="sidebar__details-text">
+                        Вибір елементів для стилізації.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="properties"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Властивості та значення
+                      </h3>
+                      <p class="sidebar__details-text">
+                        Задають вигляд елементів.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="cascading"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Каскадність
+                      </h3>
+                      <p class="sidebar__details-text">
+                        Порядок застосування стилів.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="specificity"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Специфічність та успадкування
+                      </h3>
+                      <p class="sidebar__details-text">Пріоритет стилів.</p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="block_model"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Блокова модель
+                      </h3>
+                      <p class="sidebar__details-text">
+                        Модель структури елементів.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="measurement"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Одиниці вимірювання
+                      </h3>
+                      <p class="sidebar__details-text">
+                        px, em, %, rem, vw тощо.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="positioning"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Позиціонування
+                      </h3>
+                      <p class="sidebar__details-text">Розміщення елементів.</p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="adaptability"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Адаптивність і медіа-запити
+                      </h3>
+                      <p class="sidebar__details-text">Під різні пристрої.</p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="animation"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Переходи та анімації
+                      </h3>
+                      <p class="sidebar__details-text">Динамічні ефекти.</p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="sidebar__details-item"
+                    data-file="css"
+                    data-topic="CSS_variables"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        CSS-змінні
+                      </h3>
+                      <p class="sidebar__details-text">Змінні для стилів.</p>
+                    </div>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- SCSS (SASS) -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/sass.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">SCSS (SASS)</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- JavaScript -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/js.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">JavaScript</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Git -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/gitlogo.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">Git Github</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-setup"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Налаштування Git
+                      </h3>
+                      <i class="fas fa-gear"></i>
+                      <p class="sidebar__details-text">
+                        Інсталяція, налаштування, початок роботи
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-basic"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Основні команди
+                      </h3>
+                      <i class="fas fa-terminal"></i>
+                      <p class="sidebar__details-text">
+                        Статус, історія змін, коміт
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-diff"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Перегляд змін
+                      </h3>
+                      <i class="fas fa-eye"></i>
+                      <p class="sidebar__details-text">
+                        Відмінності та деталі комітів
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-amend-reset"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Редагування та скасування змін
+                      </h3>
+                      <i class="fas fa-edit"></i>
+                      <p class="sidebar__details-text">
+                        Робота з версіями файлів, комітів
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-clean"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Очищення проєкту
+                      </h3>
+                      <i class="fas fa-broom"></i>
+                      <p class="sidebar__details-text">Видалення файлів</p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-branches"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Робота з гілками
+                      </h3>
+                      <i class="fas fa-code-branch"></i>
+                      <p class="sidebar__details-text">
+                        Створення, видалення, переміщення
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-merge"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Злиття гілок
+                      </h3>
+                      <i class="fas fa-code-merge"></i>
+                      <p class="sidebar__details-text">
+                        Обʼєднання, застосування змін
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-conflicts"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Конфлікти та їх вирішення
+                      </h3>
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <p class="sidebar__details-text">
+                        Коли виникає конфлікт?
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="sidebar__details-item"
+                    data-file="git"
+                    data-topic="git-github"
+                  >
+                    <div>
+                      <h3 class="title-h3 sidebar__details-title">
+                        Робота з GitHub
+                      </h3>
+                      <i class="fab fa-github"></i>
+                      <p class="sidebar__details-text">
+                        Синхронізація локального репозиторію з GitHub
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- TypeScript -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/typescript.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">TypeScript</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- React -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/react.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">React</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- php -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/php.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">php</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- JSON -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/json-file.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">JSON</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- SQL -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/sql.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">SQL</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- YAML -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/yaml.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">YAML</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- GraphGL -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/graphql.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">GraphQL</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Bash -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/Bash.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">Bash</h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Python -->
+            <li class="sidebar__list-items">
+              <details class="sidebar__details">
+                <summary class="sidebar__summary">
+                  <img
+                    class="sidebar__summary-img"
+                    src="/src/img/icons/python.png"
+                    alt="html"
+                  />
+                  <h2 class="title-h2 sidebar__summary-title">
+                    Python (Django/Flask)
+                  </h2>
+                </summary>
+                <ul class="sidebar__details-list">
+                  <li>Селектори – вибір елементів для стилізації.</li>
+                  <li>Властивості та значення – задають вигляд елементів.</li>
+                  <li>Каскадність – порядок застосування стилів.</li>
+                  <li>Специфічність та успадкування – пріоритет стилів.</li>
+                  <li>Блокова модель – модель структури елементів.</li>
+                  <li>Одиниці вимірювання – px, em, %, rem, vw тощо.</li>
+                  <li>Позиціонування – розміщення елементів.</li>
+                  <li>Адаптивність і медіа-запити – під пристрій.</li>
+                  <li>Переходи та анімації – динамічні ефекти.</li>
+                  <li>CSS-змінні – змінні для стилів.</li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="chat-wrapper">
+          <div id="chatLog" class="chat-log"></div>
+          <textarea id="chatInput" placeholder="Напиши запитання..."></textarea>
+          <button id="sendBtn">Відправити</button>
+        </div> -->
+      </aside>
+
+      <div id="commandPalette" hidden>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Пошук..."
+          autocomplete="off"
+        />
+        <ul id="searchResults"></ul>
+      </div>
+      <main class="main"></main>
+      <footer class="footer">
+        <p>
+          Автор: Devak | Версія: 1.0.0 | Останнє оновлення:
+          <span id="lastUpdated"></span>
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/src/js/script.js"></script>
+  </body>
+</html>
